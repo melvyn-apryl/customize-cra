@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`addPostcssPlugins adds postcss plugins to the postcss rule 1`] = `
-Object {
-  "module": Object {
-    "rules": Array [
-      Object {
-        "oneOf": Array [
-          Object {
-            "use": Array [
-              Object {
-                "options": Object {
+{
+  "module": {
+    "rules": [
+      {
+        "oneOf": [
+          {
+            "use": [
+              {
+                "options": {
                   "ident": "postcss",
                   "plugins": [Function],
                 },
@@ -24,17 +24,17 @@ Object {
 `;
 
 exports[`addWebpackAlias initializes resolve.alias with empty objects if non-existant 1`] = `
-Object {
-  "resolve": Object {
-    "alias": Object {},
+{
+  "resolve": {
+    "alias": {},
   },
 }
 `;
 
 exports[`addWebpackAlias merges the provided alias object with the config resolve.alias object 1`] = `
-Object {
-  "resolve": Object {
-    "alias": Object {
+{
+  "resolve": {
+    "alias": {
       "a": "A",
       "b": "b",
       "c": "c",
@@ -44,11 +44,11 @@ Object {
 `;
 
 exports[`addWebpackExternals returns function that spreads provided args last in externals list 1`] = `
-Object {
-  "externals": Array [
+{
+  "externals": [
     [Function],
     /\\^\\(jquery\\|\\\\\\$\\)\\$/i,
-    Object {
+    {
       "lodash": "Lodash",
       "react": "React",
       "react-dom": "ReactDom",
@@ -58,15 +58,15 @@ Object {
 `;
 
 exports[`addWebpackModuleRule adds the provided rule to module.rules 1`] = `
-Object {
-  "module": Object {
-    "rules": Array [
-      Object {
-        "oneOf": Array [
-          Object {
+{
+  "module": {
+    "rules": [
+      {
+        "oneOf": [
+          {
             "name": "__TEST__",
           },
-          Object {
+          {
             "test": true,
           },
         ],
@@ -77,8 +77,8 @@ Object {
 `;
 
 exports[`addWebpackPlugin adds the provided plugin to the config plugins list 1`] = `
-Object {
-  "plugins": Array [
+{
+  "plugins": [
     "A",
     "B",
   ],
@@ -86,15 +86,15 @@ Object {
 `;
 
 exports[`addWebpackResolve initializes resolve with empty object if non-existant 1`] = `
-Object {
-  "resolve": Object {},
+{
+  "resolve": {},
 }
 `;
 
 exports[`addWebpackResolve merges the provided resolve object into the config resolve object 1`] = `
-Object {
-  "resolve": Object {
-    "alias": Object {
+{
+  "resolve": {
+    "alias": {
       "a": "a",
       "b": "B",
     },
@@ -102,14 +102,22 @@ Object {
 }
 `;
 
+exports[`adjustStyleLoaders find all style loaders and callback one by one 1`] = `
+{
+  "use": [
+    "style-loader",
+  ],
+}
+`;
+
 exports[`adjustWorkbox calls the provided adjustment using the workbox plugin config 1`] = `
-Object {
-  "plugins": Array [
-    Object {
-      "config": Object {
+{
+  "plugins": [
+    {
+      "config": {
         "test": true,
       },
-      "constructor": Object {
+      "constructor": {
         "name": "GenerateSW",
       },
     },
@@ -117,20 +125,12 @@ Object {
 }
 `;
 
-exports[`adjustStyleLoaders find all style loaders and callback one by one 1`] = `
-Object {
-  "use": Array [
-    "style-loader",
-  ],
-}
-`;
-
 exports[`disableChunk disables chunking config options 1`] = `
-Object {
-  "optimization": Object {
+{
+  "optimization": {
     "runtimeChunk": false,
-    "splitChunks": Object {
-      "cacheGroups": Object {
+    "splitChunks": {
+      "cacheGroups": {
         "default": false,
       },
     },
@@ -139,18 +139,18 @@ Object {
 `;
 
 exports[`eslint addTslintLoader adds tslint-loader as the first rule 1`] = `
-Object {
-  "module": Object {
-    "rules": Array [
-      Object {
+{
+  "module": {
+    "rules": [
+      {
         "enforce": "pre",
         "loader": "tslint-loader",
-        "options": Object {
+        "options": {
           "test": true,
         },
         "test": /\\\\\\.\\(ts\\|tsx\\)\\$/,
       },
-      Object {
+      {
         "test": true,
       },
     ],
@@ -159,21 +159,21 @@ Object {
 `;
 
 exports[`eslint disableEsLint filters out the eslint rules from the config rules list 1`] = `
-Object {
-  "module": Object {
-    "rules": Array [],
+{
+  "module": {
+    "rules": [],
   },
 }
 `;
 
 exports[`eslint useEslintRc removes the base eslint config and uses the passed filename instead 1`] = `
-Object {
-  "module": Object {
-    "rules": Array [
-      Object {
-        "use": Array [
-          Object {
-            "options": Object {
+{
+  "module": {
+    "rules": [
+      {
+        "use": [
+          {
+            "options": {
               "configFile": ".eslintrc",
               "ignore": true,
               "useEslintrc": true,
@@ -187,10 +187,10 @@ Object {
 `;
 
 exports[`removeModuleScopePlugin removes the 'ModuleScopePlugin' resolve plugin 1`] = `
-Object {
-  "resolve": Object {
-    "plugins": Array [
-      Object {
+{
+  "resolve": {
+    "plugins": [
+      {
         "test": true,
       },
     ],
@@ -199,9 +199,9 @@ Object {
 `;
 
 exports[`setWebpackOptimizationSplitChunks sets the customized optimization.splitChunks for webpack 1`] = `
-Object {
-  "optimization": Object {
-    "splitChunks": Object {
+{
+  "optimization": {
+    "splitChunks": {
       "chunks": "all",
       "maxSize": 1000000,
     },
@@ -210,32 +210,32 @@ Object {
 `;
 
 exports[`setWebpackPublicPath sets the path and prepends and appends slashes 1`] = `
-Object {
-  "output": Object {
+{
+  "output": {
     "publicPath": "/mocked-public-path/",
   },
 }
 `;
 
 exports[`setWebpackPublicPath sets the path as an http address 1`] = `
-Object {
-  "output": Object {
+{
+  "output": {
     "publicPath": "http://github.com/",
   },
 }
 `;
 
 exports[`setWebpackPublicPath sets the path as an https address 1`] = `
-Object {
-  "output": Object {
+{
+  "output": {
     "publicPath": "https://github.com/",
   },
 }
 `;
 
 exports[`setWebpackStats overrides the config stats object with the provided stats object 1`] = `
-Object {
-  "stats": Object {
+{
+  "stats": {
     "b": "b",
     "c": "c",
   },
@@ -243,21 +243,21 @@ Object {
 `;
 
 exports[`setWebpackStats sets stats if it is a string 1`] = `
-Object {
+{
   "stats": "fake-normal-stats",
 }
 `;
 
 exports[`setWebpackStats sets stats if it is an object 1`] = `
-Object {
-  "stats": Object {
+{
+  "stats": {
     "assets": false,
   },
 }
 `;
 
 exports[`setWebpackTarget sets the target as the config target 1`] = `
-Object {
+{
   "target": "mocked-new-target",
 }
 `;
